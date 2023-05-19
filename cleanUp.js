@@ -8,37 +8,47 @@
 
 
 // EX 1:
-function askForName() { console.log("Hello, what is your name?") }
+function askForName(name) { 
+  console.log(`Hello ${name}`)
+}
 
-askForName()
-
+askForName("Ben")
+/* Added the name parameter and used string interpolation
+ to print "Hello" with the user's name. */ 
 
 // EX 2:
 function addThreeNums(first, second, third) {
-var sum = first + second + third
-return sum;
-      }
+  var sum = first + second + third
+  return sum;
+}
 
-addThreeNums(1, 2, 3);
-addThreeNums(4, 2, 7);
-
+console.log(addThreeNums(1, 2, 3));
+console.log(addThreeNums(4, 2, 7));
+/* Added console.log statements to function call so that 
+the results are printed to console. */
 
 // EX 3:
-func makeFreshPesto(){
+function makeFreshPesto(){
   console.log("Buy ingredients: basil, parmesan, romano, olive oil, pine nuts, garlic, salt, pepper");
   console.log("Pulse basil and pine nuts");
   console.log("Add garlic and cheeses");
   console.log("Slowly pour in oil");
-  console.log("Season");    }
+  console.log("Season");    
+}
 
 makeFreshPesto();
+/* Changed "func" to "function" in 
+function declaration statement */
+
 
 
 //  EX 4:
-function average(num1, num2) 
-  {
-var sum = num1 + num2;
-    var avg = sum / 2;
+function average(num1, num2) { 
+   return ((num1 + num2) / 2)
+}
 
-return avg
-  }
+console.log(average(30, 15))
+/* Reduced the function logic to one line by using
+parentheses and getting rid of the avg and sum variables
+Also added console.log statement in function call to display 
+result to console. */
